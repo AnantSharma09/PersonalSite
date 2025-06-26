@@ -132,22 +132,48 @@
   color: #fff;
   transition: background-color 0.3s ease;
 }
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+}
 
+.dark-mode nav.navbar {
+  background-color: #1e1e1e;
+  border-bottom: 1px solid #444;
+}
+
+.dark-mode nav.navbar a {
+  color: #e0e0e0;
+}
+
+.dark-mode section:nth-child(even) {
+  background-color: #1a1a1a;
+}
+
+.dark-mode .project-item {
+  background-color: #222;
+  border-color: #333;
+}
+
+.dark-mode .resume a:hover {
+  background-color: #e0e0e0;
+  color: #000;
+}
     
   </style>
 </head>
 <body>
-  <nav class="navbar">
-    <a href="https://x.com/_09Anant" title="X" target="_blank" rel="noopener">
-      <i class="fa-brands fa-x-twitter"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/anant-sharma-9624b3361/" title="LinkedIn" target="_blank" rel="noopener">
-      <i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/AnantSharma09" title="GitHub" target="_blank" rel="noopener">
-      <i class="fa-brands fa-github"></i>
-    </a>
-  </nav>
+ <nav class="navbar">
+  <!-- Existing social links... -->
+  <a href="https://x.com/_09Anant" ...><i class="fa-brands fa-x-twitter"></i></a>
+  <a href="https://www.linkedin.com/..." ...><i class="fa-brands fa-linkedin"></i></a>
+  <a href="https://github.com/..." ...><i class="fa-brands fa-github"></i></a>
+
+  <!-- Dark Mode Toggle -->
+  <button id="toggleDarkMode" style="margin-left: 20px; background: none; border: none; font-size: 1.2em; cursor: pointer;">
+    🌙
+  </button>
+</nav>
 
   <div class="main-content">
     <section class="hero">
